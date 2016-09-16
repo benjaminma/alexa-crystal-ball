@@ -1,6 +1,6 @@
 {
   "name": "alexa-crystal-ball",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "An Amazon Alexa Skill to predict life's most important (yes/no) questions",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "lambda"
   ],
   "author": "Ben Ma <npm.app@benjaminma.com>",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/benjaminma/alexa-crystal-ball/issues"
   },
