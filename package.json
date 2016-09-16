@@ -1,0 +1,28 @@
+{
+  "name": "alexa-crystal-ball",
+  "version": "1.0.0",
+  "description": "An Amazon Alexa Skill to predict life's most important (yes/no) questions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminma/alexa-crystal-ball.git"
+  },
+  "keywords": [
+    "amazon",
+    "alexa",
+    "skill",
+    "lambda"
+  ],
+  "author": "Ben Ma <npm.app@benjaminma.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benjaminma/alexa-crystal-ball/issues"
+  },
+  "homepage": "https://github.com/benjaminma/alexa-crystal-ball#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6"
+  }
+}
