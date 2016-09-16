@@ -48,12 +48,12 @@ exports.handler = function(event, context) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit('GetFact');
+        this.emit('GetPrediction');
     },
-    'GetNewFactIntent': function () {
-        this.emit('GetFact');
+    'GetNewPredictionIntent': function () {
+        this.emit('GetPrediction');
     },
-    'GetFact': function () {
+    'GetPrediction': function () {
 		// Get a random prediction
         var prediction = getRandomPrediction();
         var speechOutput = (rand(1, 100) >= 80) ? 'Hmm... ' : '';
@@ -74,7 +74,7 @@ var handlers = {
 };
 
 /**
- * Return a random integer between min and max (inclusive)
+ * Return a random integer between min and max (inclusive).
  * @param {number} min
  * @param {number} max
  * @return {number}
@@ -84,7 +84,7 @@ var rand = function(min, max) {
 };
 
 /**
- * Return a random item from array (or undefined if array is invalid)
+ * Return a random item from array (or undefined if array is invalid).
  * @param {Array} arr
  * @return {*}
  */
@@ -99,7 +99,7 @@ var randFromArray = function(arr) {
 };
 
 /**
- * Return a random prediction object
+ * Return a random prediction object.
  * @return {{output: string, type: string}}
  */
 var getRandomPrediction = function() {
